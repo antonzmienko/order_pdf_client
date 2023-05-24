@@ -24,8 +24,8 @@
         <c-input
             ref="client_inn"
             v-model="form.client_inn"
-            label="ИНН поставщика"
             span="6"
+            label="ИНН поставщика"
             type="number"
             :maxlength="30"
             required
@@ -33,8 +33,8 @@
         <c-input
             ref="supplier_kpp"
             v-model="form.supplier_kpp"
-            label="КПП поставщика"
             span="6"
+            label="КПП поставщика"
             type="number"
             :maxlength="30"
             required
@@ -51,35 +51,35 @@
         <c-input
             ref="logo"
             @change="file => form.logo = file"
-            label="Лого компании"
             span="6"
+            label="Лого компании"
             type="file"
             required
         />
       </div>
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-12 mt-20">
         <c-input
+            class="col-span-6"
             ref="client_fio"
             v-model="form.client_fio"
             label="ФИО покупателя"
-            span="6"
             type="text"
             :maxlength="255"
             required
         />
         <c-input
+            class="col-span-6"
             ref="supplier_inn"
             v-model="form.supplier_inn"
             label="ИНН покупателя"
-            span="6"
             type="number"
             :maxlength="30"
             required
         />
         <c-input
+            class="col-span-6"
             ref="client_address"
             v-model="form.client_address"
-            span="6"
             label="Адрес покупателя"
             type="text"
             :maxlength="255"
@@ -88,9 +88,9 @@
       </div>
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-12 mt-20">
         <c-input
+            class="col-span-6"
             ref="order_number"
             v-model="form.order_number"
-            span="6"
             label="Номер счета"
             type="text"
             :maxlength="30"

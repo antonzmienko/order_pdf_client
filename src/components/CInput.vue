@@ -1,5 +1,5 @@
 <template>
-  <div ref="main" :class="'col-span-' + span">
+  <div ref="main" :class="span ? ('col-span-' + span) : ''">
     <label v-if="label" for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">{{ label }}</label>
     <div class="mt-2.5">
       <template v-if="type === 'number'">
