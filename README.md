@@ -1,7 +1,11 @@
-# Vue 3 + Vite
+# Laravel + Vue order generator
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Генератор счета в формате pdf.
 
-## Recommended IDE Setup
+Проект состоит из:
+- backend: laravel https://github.com/antonzmienko/order_pdf_api
+- frontend: vue https://github.com/antonzmienko/order_pdf_client
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Команды для запуска проекта:
+- backend: php artisan serve --port=3000
+- frontend: npm run dev
